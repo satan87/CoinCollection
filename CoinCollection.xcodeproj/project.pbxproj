@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		373B950324A939370055962E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B94D824A939360055962E /* ContentView.swift */; };
 		373B950424A939370055962E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373B94D924A939370055962E /* Assets.xcassets */; };
 		373B950524A939370055962E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 373B94D924A939370055962E /* Assets.xcassets */; };
+		37D7E92324A941EA00E9869E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E92224A941EA00E9869E /* Coin.swift */; };
+		37D7E92624A942A000E9869E /* CountryLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 37D7E92524A942A000E9869E /* CountryLibrary */; };
+		37D7E92824A942CE00E9869E /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E92724A942CE00E9869E /* Period.swift */; };
+		37D7E92A24A9439600E9869E /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E92924A9439600E9869E /* Value.swift */; };
+		37D7E92C24A9456500E9869E /* GradingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E92B24A9456500E9869E /* GradingSystem.swift */; };
+		37D7E92E24A9474900E9869E /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E92D24A9474900E9869E /* Grade.swift */; };
+		37D7E93024A95AAB00E9869E /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E92F24A95AAB00E9869E /* Library.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,12 @@
 		373B94F924A939370055962E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		373B94FD24A939370055962E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		373B94FF24A939370055962E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D7E92224A941EA00E9869E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		37D7E92724A942CE00E9869E /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
+		37D7E92924A9439600E9869E /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		37D7E92B24A9456500E9869E /* GradingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradingSystem.swift; sourceTree = "<group>"; };
+		37D7E92D24A9474900E9869E /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		37D7E92F24A95AAB00E9869E /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D7E92624A942A000E9869E /* CountryLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +112,7 @@
 		373B94D624A939360055962E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				37D7E92124A941D900E9869E /* Model */,
 				373B94D724A939360055962E /* CoinCollectionApp.swift */,
 				373B94D824A939360055962E /* ContentView.swift */,
 				373B94D924A939370055962E /* Assets.xcassets */,
@@ -151,6 +166,43 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		37D7E92124A941D900E9869E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37D7E93124A95B5800E9869E /* Coin */,
+				37D7E93224A95B5F00E9869E /* Grade */,
+				37D7E93324A95B6700E9869E /* Library */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37D7E93124A95B5800E9869E /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				37D7E92224A941EA00E9869E /* Coin.swift */,
+				37D7E92724A942CE00E9869E /* Period.swift */,
+				37D7E92924A9439600E9869E /* Value.swift */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		37D7E93224A95B5F00E9869E /* Grade */ = {
+			isa = PBXGroup;
+			children = (
+				37D7E92B24A9456500E9869E /* GradingSystem.swift */,
+				37D7E92D24A9474900E9869E /* Grade.swift */,
+			);
+			path = Grade;
+			sourceTree = "<group>";
+		};
+		37D7E93324A95B6700E9869E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				37D7E92F24A95AAB00E9869E /* Library.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,12 +213,16 @@
 				373B94DA24A939370055962E /* Sources */,
 				373B94DB24A939370055962E /* Frameworks */,
 				373B94DC24A939370055962E /* Resources */,
+				37A1E15B24A95CFC0072FCCB /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				37D7E92524A942A000E9869E /* CountryLibrary */,
+			);
 			productName = iOS;
 			productReference = 373B94DE24A939370055962E /* CoinCollection.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +314,9 @@
 				Base,
 			);
 			mainGroup = 373B94D124A939360055962E;
+			packageReferences = (
+				37D7E92424A942A000E9869E /* XCRemoteSwiftPackageReference "CountryLibrary" */,
+			);
 			productRefGroup = 373B94DF24A939370055962E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,13 +362,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37A1E15B24A95CFC0072FCCB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint #--enable-all-rules\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		373B94DA24A939370055962E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D7E92324A941EA00E9869E /* Coin.swift in Sources */,
 				373B950224A939370055962E /* ContentView.swift in Sources */,
+				37D7E92A24A9439600E9869E /* Value.swift in Sources */,
+				37D7E92824A942CE00E9869E /* Period.swift in Sources */,
+				37D7E92E24A9474900E9869E /* Grade.swift in Sources */,
+				37D7E93024A95AAB00E9869E /* Library.swift in Sources */,
 				373B950024A939370055962E /* CoinCollectionApp.swift in Sources */,
+				37D7E92C24A9456500E9869E /* GradingSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +781,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37D7E92424A942A000E9869E /* XCRemoteSwiftPackageReference "CountryLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/satan87/CountryLibrary.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37D7E92524A942A000E9869E /* CountryLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37D7E92424A942A000E9869E /* XCRemoteSwiftPackageReference "CountryLibrary" */;
+			productName = CountryLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 373B94D224A939360055962E /* Project object */;
 }
